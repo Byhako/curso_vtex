@@ -8,7 +8,7 @@
 
 <body>
   <!-- Header -->
-  <vtex:template id="header" />
+  <vtex:template id="00-header" />
 
   <!-- Full banner -->
   <div class="banner">
@@ -17,6 +17,35 @@
 
   <!-- Main -->
   <main role="main" id="main" class="warp">
+    <div class="halfBanner">
+      <vtex:contentPlaceHolder id="half-banner" />
+    </div>
+
+    <div class="carousel">
+      <vtex:contentPlaceHolder id="vitrina 1" />
+    </div>
+
+    <div class="bannerHtml">
+      <h2>
+        <vtex:contentPlaceHolder id="titulo 1" />
+      </h2>
+      <vtex:contentPlaceHolder id="bannerHtml 1" />
+    </div>
+
+    <div class="carousel">
+      <vtex:contentPlaceHolder id="vitrina 2" />
+    </div>
+
+    <div class="categorias">
+      <vtex:contentPlaceHolder id="categorias" />
+    </div>
+
+    <div class="bannerHtml">
+      <h2>
+        <vtex:contentPlaceHolder id="titulo 2" />
+      </h2>
+      <vtex:contentPlaceHolder id="bannerHtml 2" />
+    </div>
   </main>
 
   <!-- Footer -->
