@@ -71,7 +71,7 @@ module.exports = (grunt) ->
         separator: '\n'
       dist:
         src: ['src/javascripts/plugins/*.js', 'src/javascripts/functions/*.js', 'src/javascripts/global.js']
-        dest: "build/arquivos/#{pkg.accountName}.js"
+        dest: "build/arquivos/#{accountName}.js"
 
     coffee:
       main:
@@ -148,7 +148,7 @@ module.exports = (grunt) ->
         files: [{
           expand: true
           flatten: true
-          cwd: 'build/'
+          cwd: 'build/arquivos'
           src: ['**/*.js', '!**/*.min.js']
           dest: 'build/arquivos/'
           ext: '.min.js'

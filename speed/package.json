@@ -1,7 +1,7 @@
 {
   "name": "vtex-speed",
-  "accountName": "exito",
-  "version": "5.0.0",
+  "accountName": "inmmerce59",
+  "version": "1.0.0",
   "secureUrl": true,
   "readmeFilename": "README.md",
   "description": "VTEX Store development tools - reverse proxy, compilation, minification, optimization and more!",
