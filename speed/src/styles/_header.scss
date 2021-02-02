@@ -1,0 +1,77 @@
+.flexbox {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.preHeader {
+  background: #efefef;
+  .containerPreHeader {
+    @extend.flexbox;
+    height: 30px;
+
+    .navPreHeader {
+      @extend.flexbox;
+
+      a {
+        text-decoration: none;
+        font-size: 1rem;
+        &:not(:last-of-type) {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+.header, .menu {
+  background: #fff;
+}
+
+.header {
+  .containerHeader {
+    @extend.flexbox;
+    .fullTextSearchBox {
+      .busca {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        legend, label, select {
+          display: none;
+        }
+        .fulltext-search-box {
+          border: 0;
+          background: #fff;
+        }
+        .btn-buscar {
+          border: 0;
+          background: #fff;
+        }
+      }
+    }
+
+    .amountItemsInCart {
+      .portal-totalizers-ref {
+        .amount-items-in-cart {
+          .cartInfoWrapper {
+            .title {
+              #MostraTextoXml1 {
+                font-size: 0;
+                &::after {
+                  content: 'Mi Carrito';
+                  font-size: 12px;
+                  font-weight: 600;
+                }
+              }
+            }
+            .cart-info {
+              .amount-products, .amount-kits, .total-cart {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
