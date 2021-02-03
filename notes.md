@@ -5,3 +5,8 @@ http://getbem.com/introduction/
 https://help.vtex.com/tutorial/list-of-controls-for-templates--tutorials_563#
 
 https://cssreference.io/
+
+https://css-tricks.com/snippets/css/system-font-stack/
+
+### font to base64
+https://transfonter.org/

@@ -71,7 +71,7 @@ module.exports = (grunt) ->
         separator: '\n'
       dist:
         src: ['src/javascripts/plugins/*.js', 'src/javascripts/functions/*.js', 'src/javascripts/global.js']
-        dest: "build/arquivos/#{accountName}.js"
+        dest: "build/arquivos/inmmerce59.js"
 
     coffee:
       main:
@@ -216,7 +216,7 @@ module.exports = (grunt) ->
         tasks: ['less']
       js:
         files: ['src/javascripts/**/*.js']
-        tasks: ['copy:js']
+        tasks: ['concat']
       grunt:
         files: ['Gruntfile.coffee']
 
