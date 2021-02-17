@@ -11,3 +11,12 @@ https://css-tricks.com/snippets/css/system-font-stack/
 
 ### font to base64
 https://transfonter.org/
+
+
+@import url('/arquivos/checkout.css')
+
+# Tipo postman
+https://insomnia.rest/products/designer/
+
+# Api Vtex
+https://developers.vtex.com/vtex-developer-docs/reference/catalog-api-product
