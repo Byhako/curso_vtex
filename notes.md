@@ -20,3 +20,11 @@ https://insomnia.rest/products/designer/
 
 # Api Vtex
 https://developers.vtex.com/vtex-developer-docs/reference/catalog-api-product
+
+
+
+
+
+vtex install vtex.reviews-and-ratings@2.x
+vtex install vtex.admin-pages
+vtex install vtex.store
