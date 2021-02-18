@@ -1,12 +1,23 @@
-const api = require('axios');
+const axios = require('axios');
 
 module.exports = {
   // index, show, delete, put, patch
   index(req, res) {
-    const response = api.get('https://inmmerce59.vtexcommercestable.com.br/api/catalog_system/pvt/products/GetProductAndSkuIds', {
+    axios.get(process.env.URL_LIST_SKU,
+    {
       headers: {
-        
+        'X-VTEX-API-AppKey': process.env.APP_KEY,
+        'X-VTEX-API-AppToken': process.env.APP_TOKEN
       }
+    })
+    .then(function (response) {
+      // handle success
+      res.json(response.data);
+    })
+    .catch(function (error) {
+      // handle error
+      console.error('Error', error);
+      res.send('Error');
     });
   }
 }
