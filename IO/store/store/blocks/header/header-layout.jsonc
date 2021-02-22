@@ -1,0 +1,134 @@
+{
+  "header-layout.desktop": {
+    "children": [
+      "header-row#desktop"
+    ]
+  },
+  "header-row#desktop": {
+    "children": [
+      "vtex.menu@2.x:menu#left",
+      "header-spacer",
+      "vtex.menu@2.x:menu#right"
+    ]
+  },
+  "vtex.menu@2.x:menu#left": {
+    "children": [
+      "menu-item#telephone",
+      "menu-item#mail"
+    ]
+  },
+  "vtex.menu@2.x:menu#right": {
+    "children": [
+      "menu-item#store-location",
+      "menu-item#track-your-order",
+      "menu-item#about-us"
+    ]
+  },
+  "menu-item#telephone": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "tel:+4733378901",
+        "noFollow": false,
+        "tagTitle": "telephone",
+        "text": "(57) 3215874569"
+      },
+      "iconProps": {
+        "id": "phone",
+        "size": 20,
+        "viewBox": "0 0 18 18",
+        "activeClassName": "rebel-pink",
+        "mutedClassName": "c-action-primary"
+      }
+    }
+  },
+  "menu-item#mail": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "mailto:tienda@mail.com",
+        "noFollow": false,
+        "tagTitle": "contactanos",
+        "text": "tienda@mail.com"
+      },
+      "iconProps": {
+        "id": "hpa-telemarketing",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "rebel-pink"
+      }
+    }
+  },
+  "menu-item#store-location": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "store-location",
+        "text": "Store location"
+      },
+      "iconProps": {
+        "id": "mpa-globe",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "rebel-pink"
+      }
+    }
+  },
+  "menu-item#track-your-order": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "track-your-order",
+        "text": "Track Your Order"
+      },
+      "iconProps": {
+        "id": "sti-discount",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "iconsInfo"
+      }
+    }
+  },
+  "menu-item#about-us": {
+    "props": {
+      "type": "custom",
+      "highlight":false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "about-us",
+        "text": "About Us"
+      },
+      "iconProps": {
+        "id": "inf-warning--outline",
+        "size": 16,
+        "viewBox": "0 0 16 16"
+      }
+    }
+  },
+
+  "header-layout.mobile": {
+    "children": [
+      "header-row#mobile"
+    ]
+  },
+  "header-row#mobile": {
+    "children": [
+      "minicart",
+      "logo"
+    ]
+  }
+}
