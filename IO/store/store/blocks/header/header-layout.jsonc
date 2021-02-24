@@ -1,16 +1,97 @@
 {
   "header-layout.desktop": {
     "children": [
-      "header-row#desktop"
+      "flex-layout.row#notification",
+      "flex-layout.row#desktop",
+      "flex-layout.row#logo"
     ]
   },
-  "header-row#desktop": {
+
+  "flex-layout.row#notification": {
+    "children": [
+      "notification.bar"
+    ],
+    "props": {
+      "fullWidth": true
+    }
+  },
+  "notification.bar": {
+    "props": {
+      "content": "Mi notificacion"
+    }
+  },
+
+  "flex-layout.row#logo": {
+    "props": {
+      "blockClass": "main-header",
+      // "horizontalAlign": "center",
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#search-bar",
+      "flex-layout.col#login",
+      "flex-layout.col#minicart"
+    ]
+  },
+  "flex-layout.col#logo-desktop": {
+    "children": ["logo#desktop"]
+  },
+  "flex-layout.col#search-bar": {
+    "children": ["search-bar"]
+  },
+  "flex-layout.col#login": {
+    "children": ["login"]
+  },
+  "flex-layout.col#minicart": {
+    "children": ["minicart.v2"]
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
+      "width": "180"
+    }
+  },
+  "search-bar": {
+    "blocks": ["autocomplete-result-list.v2"],
+    "props": {
+      "openAutocompleteOnFocus": true
+    }
+  },
+  "login": {
+    "props": {
+      "emailAndPasswordTitle": "Login",
+      "accessCodeTitle": "Código de acceso",
+      "emailPlaceholder": "e-mail",
+      "passwordPlaceholder": "password",
+      "showPasswordVerificationIntoTooltip": true
+    }
+  },
+
+  "flex-layout.row#desktop": {
     "children": [
       "vtex.menu@2.x:menu#left",
       "header-spacer",
       "vtex.menu@2.x:menu#right"
     ]
   },
+
+  "flex-layout.col#topleft": {
+    "children": ["vtex.menu@2.x:menu#left"],
+    "props": {
+      "blockClass": "menu-left",
+      "horizontalAlign": "left"
+    }
+  },
+  "flex-layout.col#topright": {
+    "children": ["vtex.menu@2.x:menu#right"],
+    "props": {
+      "horizontalAlign": "right"
+    }
+  },
+
   "vtex.menu@2.x:menu#left": {
     "children": [
       "menu-item#telephone",
@@ -20,8 +101,7 @@
   "vtex.menu@2.x:menu#right": {
     "children": [
       "menu-item#store-location",
-      "menu-item#track-your-order",
-      "menu-item#about-us"
+      "menu-item#track-your-order"
     ]
   },
   "menu-item#telephone": {
@@ -38,9 +118,8 @@
       "iconProps": {
         "id": "phone",
         "size": 20,
-        "viewBox": "0 0 18 18",
-        "activeClassName": "rebel-pink",
-        "mutedClassName": "c-action-primary"
+        "activeClassName": "icon-menu",
+        "viewBox": "8 4 8 14"
       }
     }
   },
@@ -58,8 +137,7 @@
       "iconProps": {
         "id": "hpa-telemarketing",
         "size": 16,
-        "viewBox": "0 0 16 16",
-        "activeClassName": "rebel-pink"
+        "viewBox": "0 0 16 16"
       }
     }
   },
@@ -77,8 +155,7 @@
       "iconProps": {
         "id": "mpa-globe",
         "size": 16,
-        "viewBox": "0 0 16 16",
-        "activeClassName": "rebel-pink"
+        "viewBox": "0 0 16 16"
       }
     }
   },
@@ -98,24 +175,6 @@
         "size": 16,
         "viewBox": "0 0 16 16",
         "activeClassName": "iconsInfo"
-      }
-    }
-  },
-  "menu-item#about-us": {
-    "props": {
-      "type": "custom",
-      "highlight":false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "about-us",
-        "text": "About Us"
-      },
-      "iconProps": {
-        "id": "inf-warning--outline",
-        "size": 16,
-        "viewBox": "0 0 16 16"
       }
     }
   },
