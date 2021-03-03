@@ -3,5 +3,8 @@
 }
 .flexRow--main-header {
   background: #ededed;
+}
+.flexRow--menu-header {
+  background: #ededed;
   margin-bottom: 20px;
 }

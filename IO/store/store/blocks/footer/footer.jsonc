@@ -20,7 +20,8 @@
     ],
     "props": {
       "horizontalAlign": "center",
-      "verticalAlign": "middle"
+      "verticalAlign": "middle",
+      "marginTop": 8
     }
   },
   "flex-layout.row#footer-mobile": {

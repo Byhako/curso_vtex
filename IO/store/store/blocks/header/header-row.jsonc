@@ -39,12 +39,20 @@
     },
     "children": [
       "flex-layout.col#logo-desktop",
-      "flex-layout.col#menuheader",
       "flex-layout.col#search-bar",
       "header-spacer",
       "flex-layout.col#login",
       "flex-layout.col#minicart"
     ]
+  },
+  "flex-layout.row#4-desktop": {
+    "props": {
+      "blockClass": "menu-header",
+      "horizontalAlign": "left",
+      "verticalAlign": "middle",
+      "fullWidth": true
+    },
+    "children": ["flex-layout.col#menuheader"]
   },
   "flex-layout.col#logo-desktop": {
     "children": ["logo#desktop"],
