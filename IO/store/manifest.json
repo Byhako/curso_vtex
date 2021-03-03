@@ -1,10 +1,11 @@
 {
   "vendor": "tiendatest3",
-  "name": "store",
-  "version": "0.1.0",
+  "name": "sandbox",
+  "version": "0.0.1",
   "builders": {
     "styles": "2.x",
-    "store": "0.x"
+    "store": "0.x",
+    "react": "3.x"
   },
   "scripts": {
     "postreleasy": "vtex publish --verbose"
