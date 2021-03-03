@@ -1,3 +1,7 @@
-.flexRow {
+.flexRow--links-header {
   background: #ededed;
+}
+.flexRow--main-header {
+  background: #ededed;
+  margin-bottom: 20px;
 }

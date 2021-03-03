@@ -8,11 +8,14 @@
   },
 
   "flex-layout.row#2-desktop": {
-    "props": {"fullWidth": true},
     "children": [
       "flex-layout.col#topleft",
       "flex-layout.col#topright"
-    ]
+    ],
+    "props": {
+      "blockClass": "links-header",
+      "fullWidth": true
+    }
   },
   "flex-layout.col#topleft": {
     "children": ["vtex.menu@2.x:menu#left"],

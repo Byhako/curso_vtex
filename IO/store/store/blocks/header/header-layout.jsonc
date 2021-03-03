@@ -4,7 +4,10 @@
       "flex-layout.row#1-desktop",
       "flex-layout.row#2-desktop",
       "flex-layout.row#3-desktop"
-    ]
+    ],
+    "props": {
+      "marginBottom": 6
+    }
   },
 
   "header-layout.mobile": {
