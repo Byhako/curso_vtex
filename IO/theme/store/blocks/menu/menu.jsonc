@@ -1,0 +1,150 @@
+{
+  "vtex.menu@2.x:menu#left": {
+    "children": [
+      "menu-item#telephone",
+      "menu-item#mail"
+    ]
+  },
+  "vtex.menu@2.x:menu#right": {
+    "children": [
+      "menu-item#store-location",
+      "menu-item#track-your-order"
+    ]
+  },
+  "vtex.menu@2.x:menu#mainheader": {
+    "children": [
+      "menu-item#mainheader1",
+      "menu-item#mainheader2",
+      "menu-item#mainheader3",
+      "menu-item#mainheader4",
+      "menu-item#mainheader5",
+      "menu-item#mainheader6"
+    ]
+  },
+  "menu-item#telephone": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "tel:+4733378901",
+        "noFollow": false,
+        "tagTitle": "telephone",
+        "text": "(57) 3215874569"
+      },
+      "iconProps": {
+        "id": "phone",
+        "size": 20,
+        "activeClassName": "icon-menu",
+        "viewBox": "8 4 8 14"
+      }
+    }
+  },
+  "menu-item#mail": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "mailto:tienda@mail.com",
+        "noFollow": false,
+        "tagTitle": "contactanos",
+        "text": "tienda@mail.com"
+      },
+      "iconProps": {
+        "id": "hpa-telemarketing",
+        "size": 16,
+        "viewBox": "0 0 16 16"
+      }
+    }
+  },
+  "menu-item#store-location": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "store-location",
+        "text": "Store location"
+      },
+      "iconProps": {
+        "id": "mpa-globe",
+        "size": 16,
+        "viewBox": "0 0 16 16"
+      }
+    }
+  },
+  "menu-item#track-your-order": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "track-your-order",
+        "text": "Track Your Order"
+      },
+      "iconProps": {
+        "id": "sti-discount",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "iconsInfo"
+      }
+    }
+  },
+  "menu-item#mainheader1": {
+    "props": {
+      "type": "category",
+      "id": "menu-header",
+      "highlight": true,
+      "itemProps": {
+        "categoryId": 1
+      }
+    }
+  },
+  "menu-item#mainheader2": {
+    "props": {
+      "type": "category",
+      "id": "menu-header",
+      "highlight": true,
+      "itemProps": {
+        "categoryId": 2
+      }
+    }
+  },
+  "menu-item#mainheader3": {
+    "props": {
+      "type": "category",
+      "id": "menu-header",
+      "highlight": true,
+      "itemProps": {"categoryId": 3}
+    }
+  },
+  "menu-item#mainheader4": {
+    "props": {
+      "type": "category",
+      "id": "menu-header",
+      "highlight": true,
+      "itemProps": {"categoryId": 4}
+    }
+  },
+  "menu-item#mainheader5": {
+    "props": {
+      "type": "category",
+      "id": "menu-header",
+      "highlight": true,
+      "itemProps": {"categoryId": 5}
+    }
+  },
+  "menu-item#mainheader6": {
+    "props": {
+      "type": "category",
+      "id": "menu-header",
+      "highlight": true,
+      "itemProps": {"categoryId": 6}
+    }
+  }
+}
