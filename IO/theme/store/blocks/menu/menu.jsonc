@@ -2,7 +2,8 @@
   "vtex.menu@2.x:menu#left": {
     "children": [
       "menu-item#telephone",
-      "menu-item#mail"
+      "menu-item#mail",
+      "menu-item#icons"
     ]
   },
   "vtex.menu@2.x:menu#right": {
@@ -55,6 +56,19 @@
         "id": "hpa-telemarketing",
         "size": 16,
         "viewBox": "0 0 16 16"
+      }
+    }
+  },
+  "menu-item#icons": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/icons",
+        "noFollow": false,
+        "tagTitle": "Iconos",
+        "text": "Iconos"
       }
     }
   },
